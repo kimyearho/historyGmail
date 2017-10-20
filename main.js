@@ -22,6 +22,7 @@ function createWindow() {
 
   // 새로운 브라우저 창을 생성합니다.
   mainWindow = new BrowserWindow({ width: 1200, height: 550 })
+  mainWindow.setMenu(null);
 
   // 그리고 현재 디렉터리의 index.html을 로드합니다.
   mainWindow.loadURL(url.format({
